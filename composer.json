@@ -12,7 +12,7 @@
     ],
     "license": "MIT",
     "require": {
-        "laravel/nova": "*",
+        "laravel/nova": "*"
     },
     "autoload": {
         "psr-4": {
