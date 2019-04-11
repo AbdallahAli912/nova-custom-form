@@ -1,3 +1,4 @@
+It is a simple fork to be compatible with Nova 2. The original repository is [HERE](https://github.com/yassipad/nova-custom-form)
 
 # Nova Custom Form
 This package allows you to define entirely customizable components for specific Nova Resources.
@@ -5,7 +6,7 @@ This package allows you to define entirely customizable components for specific 
 # Installation 
 
 ```
-composer require yassi/nova-custom-form
+composer require zamudio/nova-custom-form
 ```
 
 Then you need to add the service provider to your config/app.php **after the NovaServiceProvider**:
