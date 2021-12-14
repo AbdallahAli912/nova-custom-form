@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Yassi\\": "src/"
+            "Yassi\\NovaCustomForm\\": "src/"
         }
     }
 }
