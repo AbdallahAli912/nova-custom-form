@@ -12,11 +12,11 @@
     ],
     "license": "MIT",
     "require": {
-        "laravel/nova": "~1.0"
+        "laravel/nova": "*"
     },
     "autoload": {
         "psr-4": {
-            "Yassi\\": "src/"
+            "Yassi\\NovaCustomForm\\": "src/"
         }
     }
 }
