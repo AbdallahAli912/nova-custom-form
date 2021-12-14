@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e84fa289-59bf-47a4-9b15-3522f769ffbf" name="Default Changelist" comment="" />
+    <list default="true" id="e84fa289-59bf-47a4-9b15-3522f769ffbf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Console/FormCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Console/FormCommand.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -36,6 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639503973522</updated>
       <workItem from="1639503977264" duration="37000" />
+      <workItem from="1639504053510" duration="947000" />
     </task>
     <servers />
   </component>
