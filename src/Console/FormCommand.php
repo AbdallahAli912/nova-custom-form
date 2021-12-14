@@ -162,7 +162,7 @@ class FormCommand extends Command
      */
     protected function installNpmDependencies()
     {
-        $this->runCommand('npm set progress=false && npm install', $this->formPath());
+        $this->runCommand('npm set progress=false && npm install', [$this->formPath()],$this->output);
     }
 
     /**
@@ -172,7 +172,7 @@ class FormCommand extends Command
      */
     protected function compile()
     {
-        $this->runCommand('npm run dev', $this->formPath());
+        $this->runCommand('npm run dev', [$this->formPath()],$this->output);
     }
 
     /**
@@ -182,19 +182,21 @@ class FormCommand extends Command
      */
     protected function composerUpdate()
     {
-        $this->runCommand('composer update', getcwd());
+        $this->runCommand('composer update', [getcwd()],$this->output);
     }
 
     /**
      * Run the given command as a process.
      *
      * @param  string  $command
-     * @param  string  $path
+     * @param  array  $arguments
+     * @param  array  $output
+
      * @return void
      */
-    protected function runCommand($command, $path)
+    protected function runCommand($command, $arguments,$output)
     {
-        $process = (new Process($command, $path))->setTimeout(null);
+        $process = (new Process($command, $arguments[0]))->setTimeout(null);
 
         if ('\\' !== DIRECTORY_SEPARATOR && file_exists('/dev/tty') && is_readable('/dev/tty')) {
             $process->setTty(true);
