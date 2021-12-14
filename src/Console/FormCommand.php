@@ -196,7 +196,7 @@ class FormCommand extends Command
      */
     protected function runCommand($command, $arguments,$output)
     {
-        $process = (new Process($command, $arguments))->setTimeout(null);
+        $process = (new Process([$command, $arguments[0]]))->setTimeout(null);
 
         if ('\\' !== DIRECTORY_SEPARATOR && file_exists('/dev/tty') && is_readable('/dev/tty')) {
             $process->setTty(true);
